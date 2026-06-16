@@ -1,4 +1,3 @@
-javascript
 let btn = document.getElementById("searchBtn");
 let result = document.getElementById("result");
 
