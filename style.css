@@ -5,66 +5,86 @@
     font-family:Arial,sans-serif;
 }
 
-body{
-    background:#f5f5f5;
-    direction:rtl;
-    text-align:center;
+body {
+    margin: 0;
+    font-family: "Cairo", sans-serif;
+    background: linear-gradient(135deg, #dbeafe, #f8fafc);
 }
 
-header{
-    background:#2e8b57;
-    color:white;
-    padding:20px;
+header {
+    background: #0f766e;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,.15);
 }
 
-.container{
-    width:90%;
-    max-width:700px;
-    margin:20px auto;
+.container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+}
+.card {
+    background: white;
+    border-radius: 18px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+    transition: .3s;
 }
 
-.card{
-    background:white;
-    padding:15px;
-    margin:15px 0;
-    border-radius:10px;
-    box-shadow:0 2px 5px rgba(0,0,0,0.2);
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,.15);
+}
+.open,
+.closed {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-weight: bold;
 }
 
-.open{
-    color:green;
-    font-weight:bold;
+.open {
+    background: #dcfce7;
+    color: #166534;
 }
 
-.closed{
-    color:red;
-    font-weight:bold;
+.closed {
+    background: #fee2e2;
+    color: #b91c1c;
 }
 
-button{
-    background:#2e8b57;
-    color:white;
-    border:none;
-    padding:10px 20px;
-    border-radius:5px;
-    cursor:pointer;
-    margin-top:15px;
+button {
+    width: 100%;
+    padding: 15px;
+    font-size: 17px;
+    border: none;
+    border-radius: 12px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
 }
 
-button:hover{
-    background:#256d47;
+button:hover {
+    background: #1d4ed8;
+    transform: scale(1.02);
 }
 
-#result{
-    margin-top:15px;
-    font-size:18px;
-    font-weight:bold;
-    color:#2e8b57;
+button:active {
+    transform: scale(.98);
+}
+#result {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0f766e;
 }
 
-footer{
-    margin-top:30px;
-    background:#333;
-    color:white;
-    padding:15px;
+footer {
+    text-align: center;
+    padding: 20px;
+    color: gray;
 }
