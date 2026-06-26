@@ -16,7 +16,7 @@ btn.addEventListener("click", function () {
             let link = stations[i].getElementsByTagName("a")[0].href;
             result.innerHTML =
             "أقرب محطة متاحة: " + name +
-            "<br><a href='" + link + "' target='_blank'>📍 افتح موقع المحطة</a>";
+            "<br><a href='" + link + "' target='_blank'> افتح موقع المحطة</a>";
             found = true;
             break;
         }
