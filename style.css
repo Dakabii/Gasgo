@@ -32,6 +32,16 @@ header {
     box-shadow: 0 8px 20px rgba(0,0,0,.08);
     transition: .3s;
 }
+.news{
+
+  background: white;
+    border-radius: 18px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+    transition: .3s;
+}
+
 
 .card:hover {
     transform: translateY(-5px);
@@ -70,10 +80,12 @@ button {
 button:hover {
     background: #1d4ed8;
     transform: scale(1.02);
+    background: #32774a;
+    border-right: 4px solid #0f766e;
 }
 
 button:active {
-    transform: scale(.98);
+    transform: scale(.90);
 }
 #result {
     margin-top: 25px;
