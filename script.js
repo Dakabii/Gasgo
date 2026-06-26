@@ -13,9 +13,10 @@ btn.addEventListener("click", function () {
         if (status.className == "open") {
 
             let name = stations[i].getElementsByTagName("h2")[0].innerText;
-
-            result.innerHTML = "أقرب محطة متاحة: " + name;
-
+            let link = stations[i].getElementsByTagName("a")[0].href;
+            result.innerHTML =
+            "أقرب محطة متاحة: " + name +
+            "<br><a href='" + link + "' target='_blank'>📍 افتح موقع المحطة</a>";
             found = true;
             break;
         }
